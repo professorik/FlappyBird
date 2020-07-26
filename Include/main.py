@@ -12,12 +12,12 @@ class FlappyBird:
     def __init__(self):
         self.screen = pygame.display.set_mode((1092, 708))
         self.bird = pygame.Rect(65, 50, 50, 50)
-        self.background = pygame.image.load("C:/Users/Tony/PycharmProjects/floppy/assets/background.png").convert()
-        self.birdSprites = [pygame.image.load("C:/Users/Tony/PycharmProjects/floppy/assets/1.png").convert_alpha(),
-                            pygame.image.load("C:/Users/Tony/PycharmProjects/floppy/assets/2.png").convert_alpha(),
-                            pygame.image.load("C:/Users/Tony/PycharmProjects/floppy/assets/dead.png")]
-        self.wallUp = pygame.image.load("C:/Users/Tony/PycharmProjects/floppy/assets/bottom.png").convert_alpha()
-        self.wallDown = pygame.image.load("C:/Users/Tony/PycharmProjects/floppy/assets/top.png").convert_alpha()
+        self.background = pygame.image.load("PycharmProjects/floppy/assets/background.png").convert()
+        self.birdSprites = [pygame.image.load("PycharmProjects/floppy/assets/1.png").convert_alpha(),
+                            pygame.image.load("PycharmProjects/floppy/assets/2.png").convert_alpha(),
+                            pygame.image.load("PycharmProjects/floppy/assets/dead.png")]
+        self.wallUp = pygame.image.load("PycharmProjects/floppy/assets/bottom.png").convert_alpha()
+        self.wallDown = pygame.image.load("PycharmProjects/floppy/assets/top.png").convert_alpha()
         self.gap = 160
         self.countOfBlocks = 6
         self.walls_x = [400 + i * random.randint(300, 330) for i in range(self.countOfBlocks)]
